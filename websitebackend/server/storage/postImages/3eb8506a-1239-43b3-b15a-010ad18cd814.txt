@@ -1,0 +1,56 @@
+JS tasks with arrays
+let cars = [ "Honda", "Tayota", "Seat", "Opel", "VW", "BMW", "Audi"];
+let nums  = [1, 1, 1, 2, 2, 1, 3, 2, 1, 1, 4, 4, 5, 6, 6, 6, 2, 7, 3, 3, 8, 8, 9, 8];
+
+1) Просуммировать все значения в массиве:
+let sum = nums.reduce((x, y) => x + y);
+
+2) Удалить все ложные значения из массива:
+let arr = [false, 'red', '', 0, 2, null, NaN, true, undefined];
+let new_arr = arr.filter(Boolean);
+
+3) Конвертировать массив в обьект:
+let obj = { ...cars };
+
+4) Удалить повторяющиеся элементы из массива:
+let uni_nums = [ ...new Set(nums)];
+	ИЛИ
+let uni_nums = Array.from(new Set(nums)];
+
+5) Заменить определенное значение в массиве:
+cars.splice(0, 2, 'Nissan', 'Tesla');
+
+6) Перебор массива не используя метод  map:
+let new_cars = [
+	{car: 'Toyota', color: 'red'},
+ 	{car: 'Honda', color: 'green'},
+	{car: 'Suzuki', color: 'blue'},
+	{car: 'BMW', color: 'black'}
+];
+let car_name = Array.from(new_cars, ({car}) => car);
+
+7) Очищение массива:
+nums.splice(0, nums.length);
+	ИЛИ
+nums.length = 0;
+
+8) Найти одинаковые числа в массивах:
+let nums2 = [1, 4, 55, 6, 8, 11, 22, 55, 67];
+let new_nums = [ ...new Set(nums)].filter(item => nums2.includes(item));
+
+9) Реверс массива:
+let new_nums = nums.reverse();
+
+10) Найти индекс последнего вхождение какого-то элемента:
+let last_index = nums.lastIndexOf(элемент);
+
+11) Заполнить массив данными:
+let new_arr = new Arr(10).fill(1);
+
+12) Получить случайный элемент массива:
+let rand_num = nums[(Match.floor(Math.random() * (nums.length)))];
+
+13) Array.prototype.duplicate = function () {
+    var array = this;
+    return array.concat(array);
+};

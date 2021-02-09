@@ -1,0 +1,14 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "mongodb",
+    "url": "mongodb://dimakruhlyi:vz5PWtoK3PHQV8Sn@firstcluster-shard-00-00.pzhk7.mongodb.net:27017,firstcluster-shard-00-01.pzhk7.mongodb.net:27017,firstcluster-shard-00-02.pzhk7.mongodb.net:27017/mywebsite?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
+  },
+  "myFile": {
+    "name": "myFile",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage",
+    "nameConflict": "makeUnique"
+  }
+}
