@@ -13,10 +13,11 @@ This repository contains font-end and backend for 'Mini blog' website.
 - Node.js
 - Loopback 3
 - Npm, yarn
+- MongoDB
 
 ## Details
 ### websitebackend
-This folder contains backend for Mini blog website. For API creation was using Loopback 3 and for backend - Node.js.
+This folder contains backend for Mini blog website. For API creation was using Loopback 3 and for backend - Node.js. For database I used MongoDB (Atlas).
 - Link: https://miniblogbackend.herokuapp.com/explorer/
 ![websitebackend](https://i.ibb.co/wQ6mKJf/Screenshot-1.jpg)
 
